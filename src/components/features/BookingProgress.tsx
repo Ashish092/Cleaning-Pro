@@ -62,7 +62,7 @@ export default function BookingProgress() {
   }
 
   return (
-    <div className="hidden lg:block mb-8">
+    <div className="mb-8">
       <div className="flex items-center justify-between">
         {steps.map((step, index) => {
           const isCompleted = index < currentStep

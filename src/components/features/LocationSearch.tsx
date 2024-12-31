@@ -543,8 +543,7 @@ export default function LocationSearch() {
   }
 
   return (
-    <div className="w-full">
-      <h2 className="text-2xl font-semibold">Book Your Clean</h2>
+    <div className="max-w-2xl">
       <p className="text-gray-600 mb-6">
         Please enter your suburb or postcode to check if we service your area
       </p>

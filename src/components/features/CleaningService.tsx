@@ -55,9 +55,13 @@ export default function CleaningService() {
   }
 
   return (
-    <div className="w-full">
+    <div className="max-w-3xl">
       <h2 className="text-2xl font-semibold mb-4">Select Your Service</h2>
-      <div className="grid gap-4 grid-cols-1">
+      <p className="text-gray-600 mb-6">
+        Choose the type of cleaning service that best suits your needs
+      </p>
+
+      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {serviceOptions.map((service) => (
           <div
             key={service.id}

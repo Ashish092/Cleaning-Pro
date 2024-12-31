@@ -9,7 +9,8 @@ export default function ConfirmationPage() {
       <Header />
       <Sidebar />
       
-      <main className="flex-1 min-h-screen pt-24 pl-64 pr-80">
+      <main className="flex-1 min-h-screen pt-24 
+        px-4 md:pl-64 md:pr-80">
         <div className="p-6 max-w-4xl mx-auto">
           <BookingConfirmation />
         </div>

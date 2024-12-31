@@ -3,7 +3,6 @@
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import { MapPin, Calendar, Clock, CheckCircle } from 'lucide-react'
-import styles from './booking-summary.module.css'
 
 interface BookingSummaryData {
   suburb?: {
@@ -93,7 +92,8 @@ export default function BookingSummary() {
   }
 
   return (
-    <div className={styles.summary}>
+    <div className="fixed right-0 top-0 h-screen w-80 bg-gray-50 border-l border-gray-200 pt-24 px-6
+      hidden md:block">
       <div className="space-y-6">
         <h2 className="text-lg font-semibold">Booking Summary</h2>
 

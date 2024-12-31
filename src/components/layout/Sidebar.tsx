@@ -3,7 +3,6 @@
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import { Calendar, MapPin, Settings, CheckCircle } from 'lucide-react'
-import styles from './sidebar.module.css'
 
 interface NavItem {
   id: string
@@ -49,8 +48,9 @@ export default function Sidebar() {
   const currentStep = getCurrentStepIndex()
 
   return (
-    <div className={styles.sidebar}>
-      <nav className="px-1">
+    <div className="fixed left-0 top-0 h-screen w-64 bg-white border-r border-gray-200 pt-24
+      hidden md:block">
+      <nav className="px-4">
         <ul className="space-y-1">
           {navItems.map((item, index) => {
             const isCompleted = index < currentStep
@@ -77,7 +77,7 @@ export default function Sidebar() {
                   {item.icon}
                   <span className="font-medium">{item.label}</span>
                   {isCompleted && (
-                    <CheckCircle className="w-1 h-5 ml-auto text-[#0A61c9]" />
+                    <CheckCircle className="w-5 h-5 ml-auto text-[#0A61c9]" />
                   )}
                 </Link>
               </li>

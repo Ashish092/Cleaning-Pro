@@ -3,20 +3,18 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { Phone, Mail } from 'lucide-react'
-import styles from './header.module.css'
 
 export default function Header() {
   return (
-    <header className={styles.header}>
-      <div className={styles.headerContent}>
+    <header className="fixed top-0 left-0 right-0 h-24 bg-white border-b border-gray-200 z-50">
+      <div className="flex items-center justify-between h-full px-6">
         <Link href="/" className="flex items-center">
           <Image
             src="/Cleaning_Professionals.webp"
             alt="Cleaning Professionals"
             width={200}
             height={100}
-            className="object-contain w-auto h-[60px]"
-            priority
+            className="object-contain"
           />
         </Link>
 
